@@ -1,0 +1,134 @@
+/* Defaults for full stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Ubuntu Mono', monospace;
+	color: #ffffff;
+	background-color: #000000;
+}
+a {
+	color: #00ffff;
+	text-decoration: underline;
+}
+
+/* Header and title */
+header {
+	display: block;
+	text-align: center;
+	align-items: center;
+	padding: 0.25em;
+}
+header > a {
+	padding: 0.25em;
+	display: inline-block;
+	font-size: 3em;
+	text-align: center;
+	color: #00ff00;
+	text-decoration: none;
+}
+header > a:hover {
+	background-color: #00ff00;
+	color: #000000;
+	border-radius: 15px;
+}
+
+/* Navigation */
+nav {
+	background-color: #222222;
+  margin: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border: 0;
+	display: block;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+}
+nav > a {
+	display: inline-block;
+	margin: 0;
+	padding: 0.25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 6em;
+	font-size: 1.5em;
+	align-items: center;
+	text-align: center;
+}
+nav > a:hover {
+	background-color: #00ffff;
+	color: #222222;
+	border-radius: 15px;
+}
+
+/* Main content */
+main {
+	display: block;
+	background-color: #111111;
+	padding: 3em;
+	border: none;
+	min-height: 70vh;
+	font-size: 1.25em;
+}
+
+/* Credits */
+article {
+	text-align: center;
+	align-items: center;
+	padding: 0.5em;
+}
+article > h2 {
+	font-size: 2em;
+}
+article > p {
+	font-size: 1.5em;
+}
+
+/* Iframes by id */
+iframe#top {
+	display: block;
+	width: 100vw;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+iframe#bottom {
+	display: block;
+	width: 100vw;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Logo image */
+img#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+}
+
+/* Discord Widget, Text, and Link */
+a#discord-invite-link {
+	display: block;
+	padding-bottom: 1em;
+	text-align: center;
+}
+iframe#discord-widget {
+	display: inline-block;
+}
+p#about-discord-server {
+	width: 800px;
+	float: right;
+	text-align: justify;
+	font-size: 1.25em;
+}
+
+/* i tag */
+i {
+	font-style: normal;
+	font-weight: bold;
+	color: #9495ed;
+}
