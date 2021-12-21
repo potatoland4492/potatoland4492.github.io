@@ -86,22 +86,6 @@ article > p {
 	font-size: 1.5em;
 }
 
-/* Iframes by id */
-iframe#top {
-	display: block;
-	width: 100vw;
-	border: none;
-	padding: 0;
-	margin: 0;
-}
-iframe#bottom {
-	display: block;
-	width: 100vw;
-	border: none;
-	padding: 0;
-	margin: 0;
-}
-
 /* Logo image */
 img#logo {
 	display: block;
@@ -120,7 +104,7 @@ iframe#discord-widget {
 	display: inline-block;
 }
 p#about-discord-server {
-	width: 800px;
+	width: 780px;
 	float: right;
 	text-align: justify;
 	font-size: 1.25em;
