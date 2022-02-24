@@ -7,6 +7,24 @@
 		<link rel="stylesheet" href="css/defaults.css" type="text/css">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			div#modaldiv {
+				font-size: 2em;
+				z-index: 1000;
+				height: 100vh;
+				width: 100vw;
+				background-color: rgba(0, 0, 130, 0.5);
+				text-align: center;
+				padding-top: calc(50vh - 1em);
+				padding-bottom: calc(50vh - 1em);
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+			body {
+				height: 150vh;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
@@ -15,8 +33,12 @@
 			For card, see <a href="card.html">this</a>.
 		</main>
 		<script>
-			alert("Redirecting to card in 5s...")
-			setTimeout(function () { window.location.href = "card.html" }, 5000)
+			modaldiv = document.createElement("div");
+			modaldiv.innerText = "Redirecting you in 5 seconds...";
+			modaldiv.setAttribute("id", "modaldiv");
+			document.body.appendChild(modaldiv);
+			setTimeout(function () { modaldiv.remove(); }, 2000)
+			setTimeout(function () { window.location.href = "card.html" }, 5000);
 		</script>
 	</body>
 </html>
