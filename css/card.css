@@ -116,3 +116,7 @@ a.circles#twitch-link {
 a.circles:hover {
 	transform: scale(1.05, 1.05);
 }
+
+a#return-home {
+	font-size: 2em;
+}
