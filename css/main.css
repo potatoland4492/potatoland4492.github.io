@@ -4,11 +4,14 @@ body {
 	border: 0;
 	font-family: Roboto, sans-serif;
 	color: #dddddd;
-	background-color: #000000;
+	background-color: #353535;
+	height: fit-content;
+	min-height: 100vh;
+	position: relative;
 }
 
 a {
-	color:  #00cccc;
+	color: #00cccc;
 	text-decoration: underline;
 }
 
@@ -18,8 +21,8 @@ header {
 	align-items: center;
 	padding: 0;
 	margin: 0;
-	position: sticky;
 	top: 0;
+	background-color: #000000;
 }
 header > h1 {
 	padding: 0;
@@ -39,7 +42,6 @@ header > h1 > a:hover {
 	color: #000000;
 	border-radius: 15px;
 }
-
 nav {
 	background-color: #222222;
 	margin: 0;
@@ -52,7 +54,6 @@ nav {
 	text-align: center;
 	font-weight: bold;
 }
-
 nav > a {
 	display: inline-block;
 	margin: 0;
@@ -64,46 +65,34 @@ nav > a {
 	align-items: center;
 	text-align: center;
 }
-
 nav > a:hover {
-	background-color:  #00cccc;
+	background-color: #00cccc;
 	color: #222222;
 	border-radius: 15px;
 }
 
 main {
-	display: block;
-	background-color: #353535;
-	padding: 3em;
+	float: right;
+	margin: 0;
+	padding: 1em;
+	padding-bottom: 0;
 	border: none;
-	min-height: 70vh;
-	font-size: 0.9em;
+	font-size: 1em;
 	text-align: justify;
 	line-height: 2.5em;
+	width: 70vw;
 }
 
 article {
-	padding: 0.5em;
+	padding: 1em;
 }
-
 article > h2 {
 	font-size: 2em;
-}
-
-article > p {
-	font-size: 1.5em;
-}
-
-a#discord-invite-link {
-	display: block;
-	padding-bottom: 1em;
-	text-align: center;
 }
 
 iframe#discord-widget {
 	display: inline-block;
 }
-
 p#about-discord-server {
 	width: 780px;
 	float: right;
@@ -116,4 +105,16 @@ span.italic {
 }
 span.bold {
 	font-weight: bold;
+}
+
+aside {
+	float: left;
+	width: 20vw;
+	margin: 0;
+	padding: 2.5em;
+	border: solid 5px #535353;
+	min-height: max-content;
+	position: sticky;
+	top: 0;
+	left: 0;
 }
