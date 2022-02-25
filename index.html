@@ -2,17 +2,45 @@
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8>">
-		<link rel="icon" href="files/logo.png" type="image/png">
+		<link rel="icon" href="" type="image/png">
 		<title>potatoland4492</title>
 		<link rel="stylesheet" href="css/defaults.css" type="text/css">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			div#modaldiv {
+				font-size: 2em;
+				z-index: 1000;
+				height: 100vh;
+				width: 100vw;
+				background-color: hsla(240, 100%, 25%, 0.5);
+				text-align: center;
+				padding-top: calc(50vh - 1em);
+				padding-bottom: calc(50vh - 1em);
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+			body {
+				height: 150vh;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
 			UNDER CONSTRUCTION
-			<br>
-			For card, see <a href="card.html">this</a>.
 		</main>
+		<script>
+			modaldiv = document.createElement("div");
+			modaldiv.innerText = "Redirecting you in 5 seconds...";
+			modaldiv.setAttribute("id", "modaldiv");
+			document.body.appendChild(modaldiv);
+			setInterval(function () {
+					modaldiv.style.backgroundColor = "hsla(240, 100%, 25%, 0.5)"; setTimeout(function () {
+						modaldiv.style.backgroundColor = "hsla(240, 100%, 35%, 0.5)";
+					}, 250);
+				}, 1000);
+			setTimeout(function () { window.location.href = "card.html"; }, 5000);
+		</script>
 	</body>
 </html>
