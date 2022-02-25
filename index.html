@@ -29,15 +29,14 @@
 	<body>
 		<main>
 			UNDER CONSTRUCTION
-			<br>
-			For card, see <a href="card.html">this</a>.
 		</main>
 		<script>
 			modaldiv = document.createElement("div");
 			modaldiv.innerText = "Redirecting you in 5 seconds...";
 			modaldiv.setAttribute("id", "modaldiv");
 			document.body.appendChild(modaldiv);
-			setTimeout(function () { modaldiv.remove(); }, 2000)
+			// Optionally remove the modal
+			// setTimeout(function () { modaldiv.remove(); }, 2500)
 			setTimeout(function () { window.location.href = "card.html" }, 5000);
 		</script>
 	</body>
