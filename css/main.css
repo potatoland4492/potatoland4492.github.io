@@ -72,15 +72,19 @@ nav > a:hover {
 }
 
 main {
-	float: right;
+	display: block;
 	margin: 0;
-	padding: 1em;
-	padding-bottom: 0;
-	border: none;
-	font-size: 1em;
-	text-align: justify;
-	line-height: 2.5em;
-	width: 70vw;
+	padding: 2.5em;
+	align-items: center;
+	align-self: center;
+	align-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #292144;
+	border-radius: 50px;
+	max-width: fit-content;
+	min-height: fit-content;
 }
 
 article {
@@ -88,16 +92,6 @@ article {
 }
 article > h2 {
 	font-size: 2em;
-}
-
-iframe#discord-widget {
-	display: inline-block;
-}
-p#about-discord-server {
-	width: 780px;
-	float: right;
-	text-align: justify;
-	font-size: 1.25em;
 }
 
 span.italic {

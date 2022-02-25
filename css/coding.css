@@ -1,0 +1,11 @@
+main {
+	float: right;
+	margin: 0;
+	padding: 1em;
+	padding-bottom: 0y;
+	border: none;
+	font-size: 1em;
+	text-align: justify;
+	line-height: 2.5em;
+	width: 70vw;
+}
